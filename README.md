@@ -1,37 +1,25 @@
-# go抖音支付
+# go抖音小程序支付
 
 #### 介绍
-go抖音支付
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+go抖音小程序支付
 
 #### 使用说明
+![输入图片说明](31aa1cb746245202391b392a43c64ae.png)
+这里可以优化一下
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```
+               paramsMap := map[string]interface{}{
+			"app_id":       "ttb905cfb8263a12dc01",
+			"out_order_no": "noncestr" + timestamp,
+			"total_amount": 1,
+			"subject":      "抖音商品",
+			"body":         "抖音商品",
+			"valid_time":   300,
+			"notify_url":   "https://app.mujuapi.cn/api/pay/notify",
+		}
+		paramsMap["sing"] = getSign(paramsMap)
+```
+![输入图片说明](99814bdea85c3f9f1b22c264e4cb19b.png)
 
-#### 参与贡献
+ **替换画横线的地方，即可测试** 
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
